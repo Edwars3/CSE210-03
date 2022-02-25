@@ -14,4 +14,6 @@ System required: Python 3.0
 
 Authors:
 
-Edwars Rodriguez Aaron Calahorra Barrington Mueller Maria Angelica Scarante
+Edwars Rodriguez - rod21047@byui.edu
+Aaron Calahorra - 
+Maria Angelica Scarante - nil21003@byui.edu
