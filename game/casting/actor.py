@@ -7,6 +7,7 @@ class Actor:
 
     def __init__(self):
         """Constructs a new Actor."""
+        self._score = 0
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
@@ -24,6 +25,10 @@ class Actor:
     def get_position(self):
 
         return self._position
+
+    def get_score(self):
+
+        return self._score
     
     def get_text(self):
 
