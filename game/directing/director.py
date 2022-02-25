@@ -54,12 +54,24 @@ class Director:
         """
         banner = cast.get_first_actor("banners")
         robot = cast.get_first_actor("robots")
-        artifacts = cast.get_actors("artifacts")
+        rocks = cast.get_actors("rocks")
+        gems = cast.get_actors("gems")
+        score = cast.get_first_actor("scores")
 
         banner.set_text("")
         max_x = self._video_service.get_width()
         max_y = self._video_service.get_height()
         robot.move_next(max_x, max_y)
+
+        self.play_game(rocks, cast, banner, robot)
+        self.play_game(gems, cast, banner, robot) 
+
+
+
+    def play_game(self, artifacts, cast, banner, robot):
+        points = banner.get_score()
+        banner.set_score(points)
+        banner.set_text(f"Score: {points}")
         
         for artifact in artifacts:
             if robot.get_position().equals(artifact.get_position()):

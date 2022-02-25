@@ -8,14 +8,10 @@ class Gem(Actor):
         super().__init__()
         self._e_point = 1
     
-    def set_earn_point(self, e_point):
-        """Set the points for artifacts.
-        Args:
-            value (int): The given point value."""
+    def set_e_point(self, e_point):
+
         self._e_point = e_point
 
-    def get_earn_point(self):
-        """gets the points value of Artifact.
-        Returns:
-            value (int): The artifact's point value."""
+    def get_e_point(self):
+
         return self._e_point

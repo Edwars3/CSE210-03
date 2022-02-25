@@ -59,6 +59,9 @@ class Actor:
     def set_text(self, text):
 
         self._text = text
+    def set_score(self, score):
+
+        self._score = score
 
     def set_velocity(self, velocity):
 

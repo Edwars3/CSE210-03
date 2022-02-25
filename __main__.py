@@ -9,8 +9,8 @@ from game.casting.cast import Cast
 
 from game.directing.director import Director
 
-from game.services.keyboard import KeyboardService
-from game.services.video_gem import VideoService
+from game.services.keyboard_service import KeyboardService
+from game.services.video_service import VideoService
 
 from game.shared.color import Color
 from game.shared.point import Point
